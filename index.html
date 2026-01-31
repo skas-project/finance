@@ -155,9 +155,9 @@ firebase.database().ref("financeData").on("value", snapshot => {
 });
 
 let categories = {
- income:["Salary","Business","Bonus","Other"],
- expense:["Food","Rent","Travel","Bills","Shopping","Other"],
- savings:["Investment","FD","RD","Emergency","Other"]
+ income:["Salary","Nexspider"],
+ expense:["Vehicle","Tour"],
+ savings:["Seat","FD","RD","SSA","LIC"]
 };
 
 // Load saved categories from localStorage (if any)
@@ -454,4 +454,5 @@ updateUI();
 </script>
 </body>
 </html>
+
 

@@ -36,6 +36,19 @@ canvas{
   max-height: 400px;  /* optional */
 }
 .container{display:none}
+/* Increase amount font size in summary cards */
+.cards p {
+  font-size: 32px;   /* change size as you like */
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Optional: slightly bigger headings */
+.cards h3 {
+  font-size: 20px;
+}
+
+
 </style>
 </head>
 
@@ -59,7 +72,7 @@ canvas{
 <div class="card3"><h3>Total Savings</h3><p id="totalSavings">₹0</p>
  <small>
     Net: <span id="netSavings">₹0</span><br>
-    Saved: <span id="savedSavings">₹0</span>
+    Savings: <span id="savedSavings">₹0</span>
   </small>
 </div>
  </div>
@@ -441,3 +454,4 @@ updateUI();
 </script>
 </body>
 </html>
+

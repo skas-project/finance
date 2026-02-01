@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Personal Finance Manager</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="manifest" href="/manifest.json">
+<link rel="manifest" href="/finance/manifest.json">
 <meta name="theme-color" content="#0d6efd">
 <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -455,16 +455,13 @@ updateUI();
 </script>
   <script>
   if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker.register("/service-worker.js")
-        .then(reg => console.log("Service Worker registered:", reg))
-        .catch(err => console.error("SW registration failed:", err));
-    });
+    navigator.serviceWorker.register("/finance/service-worker.js");
   }
 </script>
 
 </body>
 </html>
+
 
 
 
